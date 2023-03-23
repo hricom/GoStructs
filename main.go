@@ -13,6 +13,7 @@ func main() {
 	pedro := users.User{Id: 2, Name: "Pedro", Age: 21}
 	john := users.User{Id: 3, Name: "John", Age: 22}
 	jane := users.User{Id: 4, Name: "Jane", Age: 23}
+	yanye := users.User{Id: 4, Name: "Yanye", Age: 25}
 
 	martha.AddFriend(pedro)
 	martha.AddFriend(john)
@@ -21,6 +22,7 @@ func main() {
 	martha.ListFriends()
 
 	martha.RemoveFriend(john.Id)
+	martha.AddFriend(yanye)
 	fmt.Print("======================\n")
 	martha.ListFriends()
 
